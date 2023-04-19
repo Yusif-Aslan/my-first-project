@@ -1,0 +1,79 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Registration</mat-card-title>
+  </mat-card-header>
+
+  <form (ngSubmit)="onSubmit($event)" method="post" action="/submit-form" enctype="multipart/form-data" autocomplete="off" fxLayout="row wrap" fxLayoutGap="16px">
+    <mat-card-content fxLayout="row" fxLayoutGap="32px">
+      <div fxFlex="50">
+        <mat-form-field>
+          <input matInput type="text" id="name" name="name" placeholder="Name" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="text" id="surname" name="surname" placeholder="Surname" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="email" id="email" name="email" placeholder="Email" required>
+        </mat-form-field>
+      </div>
+
+      <div fxFlex="50">
+        <mat-form-field>
+          <input matInput type="password" id="password1" name="password1" placeholder="Password" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="password" id="password2" name="password2" placeholder="Confirm Password" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="text" id="userId" name="userId" placeholder="User ID" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-select id="role" name="role" placeholder="Role" required>
+            <mat-option value="seller">Seller</mat-option>
+            <mat-option value="customer">Customer</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+
+    <mat-card-content fxLayout="row" fxLayoutGap="32px">
+      <div fxFlex="50">
+        <mat-form-field>
+          <input matInput type="text" id="address" name="address" placeholder="Address" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="text" id="city" name="city" placeholder="City" required>
+        </mat-form-field>
+      </div>
+
+      <div fxFlex="50">
+        <mat-form-field>
+          <input matInput type="text" id="state" name="state" placeholder="State" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="text" id="country" name="country" placeholder="Country" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="text" id="postalCode" name="postalCode" placeholder="Postal Code" required>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
+      <button mat-raised-button color="primary">Register</button>
+      <p style="margin: 0; margin-right: 8px;">Already have an account?</p>
+      <a routerLink="/login" mat-raised-button color="accent">Login</a>
+    </mat-card-actions>
+  </form>
