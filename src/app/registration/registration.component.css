@@ -1,43 +1,39 @@
 .container {
   margin: 32px auto;
   max-width: 600px;
-  background-color: #6495ED;
+  background-color: #4f8dda;
   border-radius: 16px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
   padding: 24px;
-}
-
-.title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.form-group {
+  }
+  
+  .input-group {
   margin-bottom: 20px;
-}
-
-label {
+  }
+  
+  label {
   display: block;
   font-size: 16px;
   font-weight: 600;
   color: #333333;
   margin-bottom: 8px;
-}
-
-input {
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
   padding: 10px;
-  width: 95%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   background-color: #F5F5F5;
   color: #333333;
-}
-
-.btn {
+  }
+  
+  .btn {
   display: block;
   width: 100%;
   padding: 12px;
@@ -49,36 +45,36 @@ input {
   font-weight: 600;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
   background-color: #2c3e50;
-}
-
-.cta {
+  }
+  
+  .cta {
   margin-top: 24px;
   text-align: center;
-}
-
-.cta-text {
+  }
+  
+  .cta-text {
   font-size: 16px;
   font-weight: 500;
   color: #333333;
   margin-bottom: 8px;
-}
-
-.cta-btn {
+  }
+  
+  .cta-btn {
   margin-left: 8px;
-}
-
-.forgot-password {
+  }
+  
+  .forgot-password {
   font-size: 14px;
   font-weight: 500;
   color: #333333;
   text-align: center;
   margin-top: 20px;
-}
-
-.forgot-password a {
+  }
+  
+  .forgot-password a {
   color: #3f51b5;
-}
+  }
